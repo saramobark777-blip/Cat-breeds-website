@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fff9f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #ff9a8b;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      text-align: center;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Home Section */
+    #home {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 32px;
+      color: #ff6b6b;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    #home p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .home-img img {
+      width: 90%;
+      max-width: 320px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Breeds Section */
+    #breeds {
+      padding: 40px 20px;
+      background: white;
+      text-align: center;
+    }
+
+    #breeds h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #ff6b6b;
+      font-weight: 700;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff9f5;
+      width: 90%;
+      max-width: 320px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      color: #ff9a8b;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 40px 20px;
+      text-align: center;
+      background: #fff9f5;
+    }
+
+    #contact h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #ff6b6b;
+      font-weight: 700;
+    }
+
+    form {
+      max-width: 320px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border: 2px solid #ffccbb;
+      border-radius: 8px;
+      font-size: 15px;
+      background: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #999;
+    }
+
+    button {
+      background: #ff9a8b;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff6b6b;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Cat World 🐱</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#breeds">Breeds</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>All About Cats</h1>
+    <p>Cats are cute, fluffy, and the best companions for your home. They love to play and sleep all day.</p>
+    <div class="home-img">
+      <img src="https://images.unsplash.com/photo-1533738363-b7f9be1d8b42?w=400&h=300&fit=crop" alt="Cute Cat">
+    </div>
+  </section>
+
+  <!-- Breeds Section -->
+  <section id="breeds">
+    <h2>Popular Breeds</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400&h=300&fit=crop" alt="Siamese Cat">
+        <h3>Siamese</h3>
+        <p>Social, vocal, and loves attention. Famous for blue eyes and elegant body.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=400&h=300&fit=crop" alt="Persian Cat">
+        <h3>Persian</h3>
+        <p>Fluffy, calm, and loves to sleep. Needs daily grooming for its long fur.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?w=400&h=300&fit=crop" alt="Maine Coon Cat">
+        <h3>Maine Coon</h3>
+        <p>Big, friendly, and very playful. One of the largest domestic cat breeds.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>©️ 2026 Cat Website</p>
+  </footer>
+</body>
+</html>
